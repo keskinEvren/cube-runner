@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124897473966979491}
   - component: {fileID: 4914727447632339933}
+  - component: {fileID: -175726862602884027}
   m_Layer: 0
   m_Name: tile_half
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-175726862602884027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6986610145268234914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f40cd8a9769429bb512750abcd2e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
