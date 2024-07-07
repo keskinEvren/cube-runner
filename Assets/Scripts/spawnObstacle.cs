@@ -6,7 +6,7 @@ public class spawnObstacle : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaclePrefab;
     float initialSpeed = 10f;
-    float maxSpeed = 20f;
+    float maxSpeed = 16f;
     float speedIncreaseRate = 0.1f;
     float timeElapsed = 0f;
     int score = 0;
@@ -23,7 +23,7 @@ public class spawnObstacle : MonoBehaviour
     {
         while (true)
         {
-            float randomDelay = Random.Range(0.5f, 3f);
+            float randomDelay = Random.Range(0.6f, 3.2f);
             yield return new WaitForSeconds(randomDelay);
             int i = Random.Range(0, obstaclePrefab.Length);
             Vector3 spawnPosition = transform.position;
