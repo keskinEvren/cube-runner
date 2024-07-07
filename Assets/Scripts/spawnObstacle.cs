@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class spawnObstacle : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaclePrefab;
+    [SerializeField] TMP_Text scoreText;
     float initialSpeed = 10f;
     float maxSpeed = 16f;
     float speedIncreaseRate = 0.1f;
@@ -57,7 +59,8 @@ public class spawnObstacle : MonoBehaviour
         while (true)
         {
             score += 1;
-            Debug.Log("Score: " + score);
+            //Debug.Log("Score: " + score);
+            scoreText.text = "Score: " + score;
             yield return new WaitForSeconds(1f / scoreIncreaseRate);
         }
     }
